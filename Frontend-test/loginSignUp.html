@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login In</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+
+
+    <div id="loggedIn">
+        <h3 id="greeting">Welcome back </h3>
+        <div id="homeBtn">Go to the home page</div>
+        <div id="aiPage">Try out the AI</div>
+        <button id="logoutBtn">Logout</button>
+    </div>
+
+
+
+    <div id="loginDiv">
+        <form class ="loginForm">
+            <p id="errorTextL">Incorrect credinetials please try again</p>
+            <h2 id="login">Login!</h2>
+            <label for="emailL">Email: </label>
+            <input type="text" id="emailL">
+            <label for="usernameL">Username: </label>
+            <input type="text" id="usernameL">
+            <label for = "passwordL">Password: </label>
+            <input type = "password" id="passwordL">
+            <input type = "submit"  id="submitL" value="Login">
+        </form>
+        <button id="showSignUp">Sign Up</button>
+    </div>
+
+    <div id="signUpDiv">
+        <form class="signUpForm">
+            <h2 class="id">Sign Up!</h2>
+            <label for="emailS">Email: </label>
+            <input type="text" id="emailS">
+            <label for="usernameS">Username: </label>
+            <input type="text" id="usernameS">
+            <label for="passwordS">Password: </label>
+            <input type="password" id="passwordS">
+            <input type="submit" id="submitS" value="Sign Up">
+        </form>
+        <button id="showLogin">Login</button>
+    </div>
+
+
+    <script src = "classes.js"></script>
+    <script src = "https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src = "userLogin.js"></script>
+</body>
+</html>
